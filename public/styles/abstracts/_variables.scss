@@ -1,0 +1,22 @@
+// (1.02) variables
+
+:root {
+  --theme-bg: #030015;
+  --theme-color: #ffffff90;
+
+  // colors
+  --white: #ffffff;
+  --black: #000000;
+  --primary-color: #65ff4b;
+  --secondary-color: #40cc28;
+  --tertiary-color: #120f23;
+  --quaternary-color: #191b1a;
+  --quinary-color: #b1b0b6;
+
+  // transitions
+  --transition: all 0.3s ease-in-out;
+
+  // box shadow
+  --shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  --shadow-secondary: 0 0 31px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,140 @@
+/* ==== 
+ --------- (2.02) typography styles start ---------
+ ==== */
+
+//  paragraph styles
+p,
+th,
+td,
+li,
+input,
+textarea,
+select,
+label,
+blockquote,
+span {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--theme-color);
+}
+
+.primary-text {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.tertiary-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// link styles
+a,
+button {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--theme-color);
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+// heading styles
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+.light-title {
+  font-size: 72px;
+  line-height: 82px;
+}
+
+.light-title-sm {
+  font-size: 56px;
+  line-height: 66px;
+}
+
+.light-title-xs {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.l-t {
+  font-size: 140px;
+  line-height: 150px;
+  color: #c0bfc5;
+  font-weight: 800;
+  text-align: center;
+  margin-top: -25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  a,
+  span {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+}
+
+.title-animation {
+  text-transform: lowercase !important;
+}
+
+.title-animation {
+  .word {
+    .char {
+      &:nth-of-type(1) {
+        text-transform: uppercase !important;
+      }
+    }
+  }
+}
+
+// .title-animation-active {
+//   opacity: 1;
+// }
+
+/* ==== 
+ --------- (2.02) typography styles end ---------
+ ==== */

@@ -1,0 +1,37 @@
+/* ==== 
+ --------- (3.02) forms styles start ---------
+ ==== */
+
+// subscribe form
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  input {
+    flex-grow: 1;
+    padding: 22px 20px;
+    background-color: var(--quaternary-color);
+    border-radius: 40px;
+    color: var(--white);
+    width: calc(100% - 70px);
+  }
+
+  button {
+    @include box(70px);
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+}
+
+.input-single {
+  input {
+    color: white !important;
+  }
+}
+
+/* ==== 
+ --------- (3.02) forms styles end ---------
+ ==== */

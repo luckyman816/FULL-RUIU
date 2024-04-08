@@ -1,0 +1,125 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: Aikeu
+ * version: 1.0
+ * description: Artificial Neural Network AI React Next Js Template
+ * author: Pixelaxis
+ * author-url: https://themeforest.net/user/pixelaxis
+
+ 01. abstracts
+     1.01 --> mixins
+     1.02 --> variables
+    
+ 02. base
+     2.01 --> reset
+     2.02 --> typography
+     2.03 --> global
+
+ 03. components
+     3.01 --> buttons
+     3.02 --> forms
+     3.03 --> preloader
+
+ 04. layout
+     4.01 --> header
+     4.02 --> banner
+     4.03 --> footer
+
+ 05. sections
+     5.01 --> text slider styles
+     5.02 --> craft section styles
+     5.03 --> text slider large styles
+     5.04 --> tools section styles
+     5.05 --> gen section styles
+     5.06 --> partner section styles
+     5.07 --> service horizontal slider styles
+     5.08 --> unlock section styles
+     5.09 --> overview section styles
+     5.10 --> video section styles
+     5.11 --> pricing section styles
+     5.12 --> blog one section styles
+     5.13 --> counter section styles
+     5.14 --> overview two styles
+     5.15 --> review styles
+     5.16 --> text brief styles
+     5.17 --> revolution styles
+     5.18 --> empower section styles
+     5.19 --> gaming section styles
+     5.20 --> pricing secondary section styles
+     5.21 --> showcase section styles
+     5.22 --> product filter section styles
+     5.23 --> category section styles
+     5.24 --> new prompts section styles
+     5.25 --> feature seller section styles
+     5.26 --> n-level section styles
+     5.27 --> revolution five section styles
+     5.28 --> home five chatbot section styles
+     5.29 --> home five unlock section styles
+     5.30 --> blog alter section styles
+     5.31 --> news alter section styles
+     5.32 --> publisher section styles
+     5.33 --> home six poster section styles
+     5.34 --> seven journey section styles
+     5.35 --> home seven empower section styles
+     5.36 --> home seven case study section styles
+     5.37 --> service main section styles
+     5.38 --> service newsletter section styles
+     5.39 --> main news section styles
+     5.40 --> blog details section styles
+     5.41 --> shop section styles
+     5.42 --> product details section styles
+     5.43 --> contact section styles
+     5.44 --> case study main section styles
+     5.45 --> case details styles
+     5.46 --> authentication section styles
+     5.47 --> cart section styles
+     5.48 --> checkout section styles
+     5.49 --> easy section styles
+     5.50 --> case slider section styles
+
+ 06. responsive
+
+    ==================================
+============== */
+
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// font awesome 6
+@import "@/public/icons/font-awesome/css/all.css";
+
+// material icons
+@import "@/public/icons/material-icons/css/materialicons.css";
+
+// bootstrap icons
+@import "@/public/icons/bootstrap-icons/bootstrap-icons.min.css";
+
+// modal video
+@import "~react-modal-video/scss/modal-video.scss";
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+@import "./components/images";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/all-sections";
+
+// responsive styles
+@import "./responsive";

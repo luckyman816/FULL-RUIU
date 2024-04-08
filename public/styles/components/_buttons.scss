@@ -1,0 +1,275 @@
+/* ==== 
+ --------- (3.01) buttons styles start ---------
+ ==== */
+
+.btn {
+  padding: 16px 40px;
+  font-weight: 400;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: 0px;
+  }
+}
+
+.btn--primary {
+  z-index: 1;
+  color: var(--quaternary-color);
+  background-image: linear-gradient(140deg, #65ff4b 0%, #46e695 100%);
+  border: 0px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 100%;
+    background-image: linear-gradient(-140deg, #65ff4b 0%, #46e695 100%);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: var(--black);
+    border: 0px;
+    &::before {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
+
+.btn--secondary {
+  z-index: 1;
+  color: var(--white);
+  border: 0px;
+  background-color: #302e3f;
+  text-transform: capitalize;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 100%;
+    background-image: linear-gradient(140deg, #65ff4b 0%, #46e695 100%);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: var(--black);
+    border: 0px;
+    &::before {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
+
+.btn--tertiary {
+  z-index: 1;
+  color: var(--primary-color);
+  border: 1px solid black !important;
+  background-color: #181818;
+  gap: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    &::before {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
+
+.btn--quaternary {
+  z-index: 1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+  background-color: #181818;
+  gap: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 100%;
+    background-image: linear-gradient(140deg, #65ff4b 0%, #46e695 100%);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    &::before {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
+
+// scroll to top with progress
+.progress-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  background-color: #1f1f1f;
+  box-shadow: inset 0 0 0 8px #1f1f1f;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+  z-index: 999;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    background-color: var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+    &::after {
+      content: "\F148";
+      font-family: "bootstrap-icons";
+      font-weight: 900;
+      position: absolute;
+      text-align: center;
+      line-height: 34px;
+      font-size: 16px;
+      border-radius: 50%;
+      color: var(--black);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 200%);
+      height: 34px;
+      width: 34px;
+      cursor: pointer;
+      display: block;
+      z-index: 1;
+      transition: all 200ms linear;
+    }
+
+    &::before {
+      position: absolute;
+      content: "\F148";
+      font-family: "bootstrap-icons";
+      font-weight: 900;
+      text-align: center;
+      line-height: 34px;
+      font-size: 16px;
+      border-radius: 50%;
+      color: var(--black);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 34px;
+      width: 34px;
+      cursor: pointer;
+      display: block;
+      z-index: 2;
+      transition: all 200ms linear;
+    }
+  }
+
+  &:hover {
+    span {
+      &::before {
+        transform: translate(-50%, -200%);
+      }
+      &::after {
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  path {
+    fill: none;
+  }
+
+  .progress-circle {
+    path {
+      stroke: var(--primary-color);
+      stroke-width: 4;
+      box-sizing: content-box;
+    }
+  }
+}
+
+.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+//  video modal button
+.video-modal-btn {
+  a {
+    @include box(84px);
+    background-color: var(--primary-color);
+    font-size: 20px;
+    color: var(--white);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.7);
+    opacity: 0;
+  }
+}
+/* ==== 
+ --------- (3.01) buttons styles end ---------
+ ==== */

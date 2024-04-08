@@ -1,0 +1,181 @@
+/* ==== 
+ --------- (2.01) reset styles start ---------
+ ==== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  &::-moz-selection {
+    color: #ffffff;
+    background-color: #1770c8;
+  }
+
+  &::selection {
+    color: #ffffff;
+    background-color: #1770c8;
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: var(--inter);
+  font-size: 16px;
+  line-height: 0px;
+  font-weight: 400;
+  color: var(--theme-color);
+  background-color: var(--theme-bg);
+  overflow-x: clip !important;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #cae6f7;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-button,
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+}
+
+.body-active {
+  min-height: 100vw;
+}
+
+.my-app {
+  position: relative;
+  width: 100vw;
+  overflow-x: clip !important;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+}
+
+a,
+button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  outline: 0px;
+  border: 0px;
+  transition: var(--transition);
+  cursor: pointer;
+
+  i {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border: 0px;
+    outline: 0px;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: 0px;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  border: 0px !important;
+  height: 1px !important;
+}
+
+hr,
+blockquote,
+textarea {
+  margin: 0px;
+  opacity: 1;
+}
+
+input,
+textarea {
+  border: 0px;
+  outline: 0px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="checkbox"] {
+  width: initial;
+  height: initial;
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+iframe {
+  border: 0px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--inter);
+  padding: 0px;
+  margin: 0px;
+  color: var(--theme-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--mont);
+}
+
+/* ==== 
+     --------- (2.01) reset styles end ---------
+     ==== */

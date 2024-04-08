@@ -1,0 +1,36 @@
+// (1.01) mixins
+
+@mixin background($color, $repeat, $size, $position) {
+  background-color: $color;
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin center($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@mixin box($value) {
+  width: $value;
+  min-width: $value;
+  height: $value;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin blur($width, $height, $background, $blurValue) {
+  content: "";
+  width: $width;
+  height: $height;
+  min-height: 300px;
+  border-radius: 50%;
+  background: $background;
+  filter: blur($blurValue);
+  z-index: -1;
+}
